@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediCare Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 1. Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">🩺 MediCare</div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Find a Doctor</a></li>
+            <li><a href="#">Services</a></li>
+        </ul>
+    </nav>
+
+    <!-- 2. Hero Introduction Section -->
+    <header class="hero">
+        <h1>Your Health, Our Priority</h1>
+        <p>Accessible, reliable, and modern healthcare solutions at your fingertips. Welcome to your new student-built medical portal.</p>
+        <button class="btn">Explore Services</button>
+    </header>
+
+    <!-- 3. Interactive Healthcare Feature: BMI Calculator -->
+    <section class="bmi-section">
+        <h2>Health Tools: BMI Calculator</h2>
+        <p>Calculate your Body Mass Index instantly to check your health status category.</p>
+        
+        <div class="calculator-box">
+            <div class="input-group">
+                <label for="weight">Weight (kg):</label>
+                <input type="number" id="weight" placeholder="e.g. 70">
+            </div>
+            
+            <div class="input-group">
+                <label for="height">Height (cm):</label>
+                <input type="number" id="height" placeholder="e.g. 175">
+            </div>
+            
+            <button id="calculate-btn" class="btn">Calculate BMI</button>
+            
+            <div id="result-display" class="result">
+                <!-- JavaScript will inject the score and category here dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Linking our JavaScript logic script -->
+    <script src="script.js"></script>
+</body>
+</html>
